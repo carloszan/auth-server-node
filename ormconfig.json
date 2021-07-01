@@ -5,9 +5,9 @@
   "username": "postgres",
   "password": "mysecretpassword",
   "database": "auth-server-db",
-  "entities": ["src/database/entities/**/*.ts"],
-  "migrations": ["src/database/migrations/**/*.ts"],
+  "entities": ["src/database/entities/*.ts"],
+  "migrations": ["src/database/migrations/*.ts"],
   "cli": {
-    "entitiesDir": "src/entity"
+    "migrationsDir": "src/database/migrations"
   }
 }
