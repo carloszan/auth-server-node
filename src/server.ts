@@ -7,6 +7,8 @@ import "./database/connect";
 
 const app = express();
 
+app.use(express.json());
+
 app.get("/", (res, req) => req.send({ ok: true }));
 
 app.use(router);
